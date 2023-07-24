@@ -2,5 +2,16 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+solc = '0.8.20'
+optimizer_runs=1000
+etherscan_api_key = "VVX41BW4M4AGGJY2VFHNQM4IJVJRRBT3I6"
+
+fs_permissions = [
+    { access = "read-write", path = "./test/snapshot/"}
+]
+[etherscan]
+goerli = { key = "VVX41BW4M4AGGJY2VFHNQM4IJVJRRBT3I6", chainId = 5 }
+mainnet = { key = "VVX41BW4M4AGGJY2VFHNQM4IJVJRRBT3I6", chaindId = 1 }
+
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
